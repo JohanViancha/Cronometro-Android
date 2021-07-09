@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements Observer {
 
         btnIniciar.setOnClickListener(v -> {
             this.btnIniciar.setEnabled(false);
+            this.btnContinuar.setEnabled(false);
             this.btnParar.setEnabled(true);
             r = new RelojDigital(0,0,0);
             r.addObserver(this);
